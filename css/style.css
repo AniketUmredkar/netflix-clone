@@ -20,10 +20,10 @@ body {
 
 header {
   height: 75rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
-  /* url(https://assets.nflxext.com/ffe/siteui/vlv3/5c235903-02cc-4228-85a2-5fcef1e47627/eb81131c-8403-427f-b1dc-6094c31b3a91/IN-en-20211227-popsignuptwoweeks-perspective_alpha_website_large.jpg); */
-  /* background-size: cover;
-  background-position: center; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/5c235903-02cc-4228-85a2-5fcef1e47627/eb81131c-8403-427f-b1dc-6094c31b3a91/IN-en-20211227-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .container-header {
@@ -36,7 +36,6 @@ header {
 }
 
 .header-top {
-  max-width: 192rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -88,14 +87,14 @@ header {
 }
 
 .secondary-heading {
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   font-weight: 500;
   letter-spacing: 1px;
   margin: 3.6rem 0;
 }
 
 .header-text p {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 400;
   margin: 2.4rem 0;
 }
@@ -262,7 +261,7 @@ main h2 {
 /********************************************************************/
 
 .faq-container {
-  width: 110rem;
+  max-width: 110rem;
   margin: 0 auto;
   padding: 7.2rem;
   display: flex;
@@ -273,6 +272,7 @@ main h2 {
 
 aside h1 {
   font-size: 4.8rem;
+  text-align: center;
 }
 
 aside ul {
@@ -325,22 +325,17 @@ aside ul {
 }
 
 .footer-container p {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-weight: 400;
 }
 
 .footer-links {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-links ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1.6rem;
   list-style: none;
   padding-left: 0;
   font-size: 1.8rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
 }
 
 .footer-links a:link,
