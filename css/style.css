@@ -20,10 +20,10 @@ body {
 
 header {
   height: 75rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(https://assets.nflxext.com/ffe/siteui/vlv3/5c235903-02cc-4228-85a2-5fcef1e47627/eb81131c-8403-427f-b1dc-6094c31b3a91/IN-en-20211227-popsignuptwoweeks-perspective_alpha_website_large.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  /* url(https://assets.nflxext.com/ffe/siteui/vlv3/5c235903-02cc-4228-85a2-5fcef1e47627/eb81131c-8403-427f-b1dc-6094c31b3a91/IN-en-20211227-popsignuptwoweeks-perspective_alpha_website_large.jpg); */
+  /* background-size: cover;
+  background-position: center; */
 }
 
 .container-header {
@@ -36,6 +36,7 @@ header {
 }
 
 .header-top {
+  max-width: 192rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -77,11 +78,10 @@ header {
 .header-text {
   text-align: center;
   max-width: 96rem;
-  margin: auto 0;
+  margin: auto 6.4rem;
 }
 
 .main-heading {
-  margin: 0 6.4rem;
   font-size: 6.4rem;
   line-height: 1;
   font-weight: 600;
@@ -95,25 +95,33 @@ header {
 }
 
 .header-text p {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 400;
   margin: 2.4rem 0;
 }
 
 .form {
   display: flex;
   justify-content: center;
-  max-width: 96rem;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .email-input {
-  width: 54rem;
+  padding: 1.6rem 3.2rem;
+  width: 65%;
 }
 
 .btn {
+  width: 35%;
   font-size: 3.2rem;
   padding: 1.6rem 3.2rem;
   background-color: #e50914;
   color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon {
@@ -136,9 +144,11 @@ footer {
 .content-container {
   max-width: 128rem;
   margin: 0 auto;
-  display: flex;
+  padding: 3.2rem 6.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 7.2rem;
+  gap: 3.2rem;
   margin-bottom: 4.8rem;
   margin-top: 2.4rem;
 }
@@ -157,77 +167,94 @@ main h2 {
   font-weight: 400;
 }
 
-/*SECTION 1*/
-
-.visual-1 {
+.visual {
   position: relative;
 }
 
+/*SECTION 1*/
+
 .visual-1 video {
+  width: 73%;
   z-index: -1;
   position: absolute;
-  top: 9.5rem;
-  left: 7.5rem;
+  top: 21%;
+  left: 13%;
+}
+
+.visual-1 img {
+  width: 100%;
 }
 
 /*SECTION 2*/
 
-.visual-2 {
-  position: relative;
+.visual-2 img {
+  width: 100%;
 }
 
 .animation-box {
-  display: flex;
-  align-items: center;
-  gap: 2.4rem;
+  width: 60%;
   position: absolute;
-  top: 80%;
+  bottom: 7%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.2rem;
+  align-items: center;
   padding: 1.2rem 1.2rem;
   background-color: #000;
   border: 1px solid #aaa;
-  border-radius: 11px;
+  border-radius: 15px;
+}
+
+.poster-container {
+  width: 100%;
 }
 
 .stranger-things-poster {
-  width: 7.2rem;
-  height: 10rem;
+  width: 100%;
 }
 
 .text-box {
-  width: 18rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.4rem;
+  grid-column: 2/5;
 }
 
 .stranger-things-text {
   font-size: 1.8rem;
   font-weight: 600;
 }
+
 .downloading {
   font-size: 1.8rem;
   color: #0071eb;
 }
 
+.gif-container {
+  width: 50%;
+  justify-self: center;
+}
+
 .loading-gif {
-  width: 5rem;
-  height: 5rem;
+  width: 100%;
 }
 /*SECTION 3*/
 
-.visual-3 {
-  position: relative;
-}
-
 .visual-3 video {
-  width: 40rem;
+  width: 62%;
   z-index: -1;
   position: absolute;
-  top: 3.6rem;
-  left: 12.4rem;
+  top: 8%;
+  left: 18%;
+}
+
+.visual-3 img {
+  width: 100%;
+}
+
+/*SECTION 4*/
+
+.visual-4 img {
+  width: 100%;
 }
 
 /********************************************************************/
@@ -235,7 +262,7 @@ main h2 {
 /********************************************************************/
 
 .faq-container {
-  max-width: 128rem;
+  width: 110rem;
   margin: 0 auto;
   padding: 7.2rem;
   display: flex;
@@ -278,7 +305,7 @@ aside ul {
 }
 
 .aside-p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 400;
   text-align: center;
 }
