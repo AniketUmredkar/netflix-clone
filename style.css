@@ -99,19 +99,21 @@ header {
   margin: 2.4rem 0;
 }
 
-.header-form {
+.form {
   display: flex;
   justify-content: center;
   max-width: 96rem;
 }
 
 .email-input {
-  width: 69rem;
+  width: 54rem;
 }
 
 .btn {
   font-size: 3.2rem;
   padding: 1.6rem 3.2rem;
+  background-color: #e50914;
+  color: #fff;
 }
 
 .icon {
@@ -227,4 +229,101 @@ main h2 {
   top: 3.6rem;
   left: 12.4rem;
 }
-/*SECTION 4*/
+
+/********************************************************************/
+/*ASIDE SECTION*/
+/********************************************************************/
+
+.faq-container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 7.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+aside h1 {
+  font-size: 4.8rem;
+}
+
+aside ul {
+  width: 80%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 0;
+}
+
+.btn-faq {
+  margin: 0 3.2rem;
+}
+
+.btn-faq button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.4rem;
+  padding: 2.4rem;
+  color: #fff;
+  background-color: #303030;
+  font-weight: 400;
+}
+
+.faq-ans {
+  display: none;
+}
+
+.aside-p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/********************************************************************/
+/*FOOTER*/
+/********************************************************************/
+
+.footer-container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 7.2rem 9.6rem 3.2rem 9.6rem;
+  color: #757575;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.footer-container p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.footer-links a:link,
+.footer-links a:active {
+  color: #757575;
+  text-decoration: none;
+}
+
+.footer-lang-select {
+  border: 1px solid #757575;
+  color: #757575;
+  margin-bottom: 1.2rem;
+}
